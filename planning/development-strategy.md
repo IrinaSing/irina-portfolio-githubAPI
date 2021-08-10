@@ -36,19 +36,18 @@ Add following data object in client/data/portfolio.js
 - background: #FFFFFF;
 - overflow-y: scroll;
 
-# Navbar (component)
+# Navbar
+
+`type: components`
 
 ## HTML
 
-- navbar.js in client/src/components.
 - <_nav_> with class="navbar navbar-expand-lg navbar-light bg-light fixed-top".
 - Logo (name) with class="navbar-brand".
 - Div inside nav
 - Links to sections: about, skills, projects, contacts: <_a_> inside <_li_> inside <_u_>.
 
-
-
-### Navbar CSS
+### CSS
 
 - width: 71px;
 - height: 28px;
@@ -73,3 +72,77 @@ Add following data object in client/data/portfolio.js
 - display: flex;
 - align-items: center;
 - color: #000000;
+
+# About section
+
+## Avatar
+
+`type: components`
+
+- Create file avatar.js in client/src/components.
+- Write async function that creates:
+- div with id="avatar-div".
+- DOM element with tag <_img_>.
+- scr - fetch link from API.
+- style.width = 350px.
+- alt = "user avatar".
+
+## About component
+
+`type: components`
+
+- Create file about.js in client/src/components.
+- Write async function that creates:
+- div with id="about-div"
+- DOM element with tag <_h1_> and fetch Name from API.
+- DOM element with tag <_p_> and import about text from data file.
+- DOM element <_p_> and fetch location from API.
+- DOM element <_p_> and fetch email from API.
+
+# Skills section
+
+- <_h2_> Skills - header for section
+
+# Skill component
+
+`type: components`
+
+- Div, H3 and p DOM elements.
+- Render content from data.
+
+# Projects section
+
+- H1 Projects
+- H2 Individual projects, Team projects
+
+## Github profile component
+
+`type: components`
+
+- H3 My Profile
+- Github logo
+- <_p_> for info:
+- Contributes, commits, Prs - numbers fetched from API.
+
+## Introduction component
+
+`type: components`
+
+- H3 Introduction.
+- <_p_> text of introduction (from data).
+
+## Project card component
+
+`type: components`
+
+- H3 Name of the project fetched from API.
+- <_p_> description
+- labels eg. "html", "UI/UX" fetched from API/repo.
+- <_button_> buttons to repo - "code" and to demo - "demo".
+
+# Contacts section
+
+## Contact form
+
+- Bootstrap form.
+- Use formspree to make it receive emails.
