@@ -14,6 +14,7 @@
 
 <!-- BEGIN TOC -->
 
+- api-calls
 - components
   - layout
     - [footer.js](#clientsrccomponentslayoutfooterjs)
@@ -26,16 +27,12 @@
       - [index.js](#clientsrccomponentspagesquestionsindexjs)
     - quiz
       - [index.js](#clientsrccomponentspagesquizindexjs)
-  - shared
-    - [input-greeting.js](#clientsrccomponentssharedinput-greetingjs)
 - handlers
-  - [change-greeting.js](#clientsrchandlerschange-greetingjs)
 - init
   - [index.js](#clientsrcinitindexjs)
   - [router.js](#clientsrcinitrouterjs)
   - [state.js](#clientsrcinitstatejs)
 - logic
-  - [reverse.js](#clientsrclogicreversejs)
 - [routes.js](#clientsrcroutesjs)
 
 ---
@@ -43,6 +40,10 @@
 <!-- END TOC -->
 
 <!-- BEGIN DOCS -->
+
+# /api-calls
+
+---
 
 # /components
 
@@ -150,21 +151,9 @@ The quiz page.
 
 ---
 
-## /shared
-
-<details><summary><a href="../../client/src/components/shared/input-greeting.js" id="clientsrccomponentssharedinput-greetingjs">../client/src/components/shared/input-greeting.js</a></summary>
-
-</details>
-
----
-
 ---
 
 # /handlers
-
-<details><summary><a href="../../client/src/handlers/change-greeting.js" id="clientsrchandlerschange-greetingjs">../client/src/handlers/change-greeting.js</a></summary>
-
-</details>
 
 ---
 
@@ -185,22 +174,6 @@ The quiz page.
 ---
 
 # /logic
-
-<details><summary><a href="../../client/src/logic/reverse.js" id="clientsrclogicreversejs">../client/src/logic/reverse.js</a></summary>
-
-<a name="reverse"></a>
-
-## reverse ⇒ <code>string</code>
-
-Reverses a string.
-
-**Returns**: <code>string</code> - The reversed string.
-
-| Param | Type                | Default                               | Description          |
-| ----- | ------------------- | ------------------------------------- | -------------------- |
-| [str] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | A string to reverse. |
-
-</details>
 
 ---
 
