@@ -1,78 +1,27 @@
 export const data = {
-  greeting: 'hello',
-  questions: [
+  greeting: 'Hello, welcome to my page',
+  about: 'My name is Irina , I’m a junior web developer located in Belgium. I am passionate about creating maximally user-friendly websites and applications. My goal is to make products that help companies and users in reaching their goals.',
+  skills: [
     {
-      question:
-        'Which are correct ways to declare a variable in JavaScript? (strict mode)',
-      answered: false,
-      answers: [
-        {
-          text: 'const name = "Tim";',
-          correct: true,
-          selected: false,
-        },
-        {
-          text: 'name = "Tim";',
-          correct: false,
-          selected: false,
-        },
-        {
-          text: 'let name = "Tim";',
-          correct: true,
-          selected: false,
-        },
-        {
-          text: 'var name = "Tim";',
-          correct: true,
-          selected: false,
-        },
-      ],
-      links: [
-        {
-          text: 'javascript.info',
-          url: 'https://javascript.info/variables',
-        },
-        {
-          text: 'Tyler McGinnis',
-          url: 'https://ui.dev/var-let-const/',
-        },
-      ],
+      header: 'Basics',
+      text: 'HTML, CSS, UI/UX principles, Agile development, debugging, testing.',      
     },
     {
-      question: 'What does `typeof` do?',
-      answered: false,
-      answers: [
+      header: 'Background',
+      text: 'I have background in printing and e-learn design, and I like to use my knowledge when it comes to web development.',      
+    },
+    {
+      header: 'Tools',
+      tools: [
         {
-          text: 'changes the type of a primitive value',
-          correct: false,
-          selected: false,
+          name: 'Adobe Photoshop',
+          logo: '',
         },
         {
-          text: 'returns a string describing the type of a value',
-          correct: true,
-          selected: false,
-        },
-        {
-          text: 'determines if a value is primitive',
-          correct: false,
-          selected: false,
-        },
-        {
-          text: 'can tell the difference between arrays and objects',
-          correct: false,
-          selected: false,
-        },
-      ],
-      links: [
-        {
-          text: 'javascript.info',
-          url: 'https://javascript.info/types#type-typeof',
-        },
-        {
-          text: 'MDN',
-          url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof',
-        },
-      ],
+          name: 'VSCode',
+          logo: '',
+        }
+      ]       
     },
   ],
 };
