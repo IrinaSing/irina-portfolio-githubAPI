@@ -21,69 +21,55 @@
 
 -->
 
-# Home Page
+# Data
 
-## Must-Haves
+Add following data object in client/data/portfolio.js
 
-As a user, I can read instructions for the quiz:
+1. greetings
+2. about
+3. skills
 
-1. instruction.js component
+# Body (html tag)
 
-- create a title(h1) and instructions text (p) inside a div
+## CSS
 
-2. css for the component
-3. render homepage
-4. append numberOfQuestions.js component inside of instruction.js component
+- background: #FFFFFF;
+- overflow-y: scroll;
 
-As a user, I can know how many questions are in the quiz:
+# Navbar (component)
 
-1. numberOfQuestions.js shared component
+## HTML
 
-- create a text (p) for the number of questions
+- navbar.js in client/src/components.
+- <_nav_> with class="navbar navbar-expand-lg navbar-light bg-light fixed-top".
+- Logo (name) with class="navbar-brand".
+- Div inside nav
+- Links to sections: about, skills, projects, contacts: <_a_> inside <_li_> inside <_u_>.
 
-2. css for the component
 
-As a user, I can start the quiz in the home page:
 
-1. startButton.js component (button that links to the quiz page)
-2. css for the component
+### Navbar CSS
 
-# Quiz Page
+- width: 71px;
+- height: 28px;
+- left: 735px;
+- top: 24px;
+- font-style: normal;
+- font-weight: normal;
+- font-size: 24px;
+- line-height: 28px;
+- color: #000000;
 
-## Must-Haves
+### Logo CSS
 
-As a user, I can restart the quiz:
-
-1. restartButton.js component (goes to the first question, clean the score)
-2. restartButtonListener (in the component)
-3. restartButtonHandler.js
-4. css for the component
-
-As a user, I can select one or more answers for the current question:
-
-1. answerButton.js component
-2. change component class to "selected"
-3. css for the component class
-
-As a user, I can go forward to the next question:
-
-1. nextButton.js component
-2. nextButtonHandler.js
-3. nextButtonListener (in the component)
-4. css for the component
-
-As a user, I want to submit my answers at the end of the quiz:
-
-1. submitButton.js component (removes all the containers, renders text message in div and shows the score)
-2. submitButtonHandler.js
-3. submitButtonListener (in the component)
-4. css for the component
-
-## Should-Have
-
-As a user, I can go backwards to the previous question:
-
-1. previousButton.js component (for the first question it is inactive)
-2. previousButtonHandler.js
-3. previousButtonListener (in the component)
-4. css for the component
+- width: 179px;
+- height: 41px;
+- left: 67px;
+- top: 22px;
+- font-style: normal;
+- font-weight: bold;
+- font-size: 36px;
+- line-height: 41px;
+- display: flex;
+- align-items: center;
+- color: #000000;
