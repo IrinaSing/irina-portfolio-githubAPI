@@ -24,19 +24,7 @@ export const navbar = (sectionLinks) => {
   persona.innerHTML = "Irina Singh";
   persona.height = 120;
   divFluid.appendChild(persona);
-  /*
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>;
-*/
+
   // buttom for burger-menu
   const button = document.createElement("button");
   button.className = "navbar-toggler";
@@ -50,12 +38,7 @@ export const navbar = (sectionLinks) => {
   icon.className = "navbar-toggler-icon";
   button.appendChild(icon);
   divFluid.appendChild(button);
-  /*
-  <div
-    class="collapse navbar-collapse justify-content-end"
-    id="navbarNav"
-  ></div>;
-*/
+
   // collapse normal menu
   const collapseDiv = document.createElement("div");
   collapseDiv.classList = "collapse navbar-collapse justify-content-end";
