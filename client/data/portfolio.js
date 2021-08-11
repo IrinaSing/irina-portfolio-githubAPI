@@ -1,6 +1,5 @@
 export const data = {
   greeting: "Hello, welcome to my page",
-<<<<<<< HEAD
   sections: [
     { header: "About", link: "#About" },
     { header: "Skills", link: "#Skills" },
@@ -8,9 +7,6 @@ export const data = {
     { header: "Contacts", link: "#Contacts" },
   ],
   aboutP:
-=======
-  about:
->>>>>>> f5b027531eb98dfefc76447a28d46a343c96bee9
     "My name is Irina , I’m a junior web developer located in Belgium. I am passionate about creating maximally user-friendly websites and applications. My goal is to make products that help companies and users in reaching their goals.",
   skills: [
     {
@@ -23,7 +19,6 @@ export const data = {
     },
     {
       header: "Tools",
-<<<<<<< HEAD
       tools: [
         {
           name: "Adobe Photoshop",
@@ -34,9 +29,6 @@ export const data = {
           logo: "",
         },
       ],
-=======
-      text: "",
->>>>>>> f5b027531eb98dfefc76447a28d46a343c96bee9
     },
   ],
 };

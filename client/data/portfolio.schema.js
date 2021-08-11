@@ -9,13 +9,8 @@ export const schema = {
       description: "a friendly greeting for the user",
     },
 
-<<<<<<< HEAD
     aboutP: {
       type: "string",
-=======
-    about: {
-      type: "strings",
->>>>>>> f5b027531eb98dfefc76447a28d46a343c96bee9
       description: "text for <p> in section about",
     },
 
@@ -33,7 +28,6 @@ export const schema = {
         },
       },
     },
-<<<<<<< HEAD
 
     sections: {
       type: "array",
@@ -49,7 +43,5 @@ export const schema = {
         },
       },
     },
-=======
->>>>>>> f5b027531eb98dfefc76447a28d46a343c96bee9
   },
 };
