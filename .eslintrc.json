@@ -94,10 +94,10 @@
       "warn",
       { "minLength": 4, "identifiers": false, "strings": false }
     ],
-
+    /*
     "folders/match-regex": [2, "^(?!.*([-])\\1{1})[a-z-]+$", "src"],
     "filenames/match-regex": [2, "^(?!.*([-])\\1{1})[a-z-.spec]+$"],
-
+*/
     "jsdoc/check-alignment": 1,
     "jsdoc/check-indentation": 1,
     "jsdoc/check-line-alignment": 1,

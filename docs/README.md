@@ -14,6 +14,7 @@
 
 <!-- BEGIN TOC -->
 
+- api-calls
 - components
   - layout
     - [footer.js](#clientsrccomponentslayoutfooterjs)
@@ -43,6 +44,10 @@
 <!-- END TOC -->
 
 <!-- BEGIN DOCS -->
+
+# /api-calls
+
+---
 
 # /components
 

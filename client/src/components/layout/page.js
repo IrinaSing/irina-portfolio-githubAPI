@@ -1,18 +1,21 @@
 import { navbar } from "./navbar.js";
 import { footer } from "./footer.js";
+import { state } from "../../init/state.js";
 
 /**
  * The page layout component.
  *
  * @param {Function | HTMLElement} bodyComponent - The body for the newly rendered page.
- * @param {object} routes - The application's routes, for the navbar.
+ *
  * @returns {HTMLDivElement} A rendered page element.
  * @throws {TypeError} When the bodyComponent is not a function or DOM element.
  */
-export const page = (bodyComponent, routes) => {
+// @param {object} routes - The application's routes, for the navbar.
+
+export const page = (bodyComponent) => {
   const container = document.createElement("div");
 
-  container.appendChild(navbar(routes));
+  container.appendChild(navbar(state.sections));
   if (typeof bodyComponent === "function") {
     container.appendChild(bodyComponent());
   } else if (bodyComponent instanceof Element) {

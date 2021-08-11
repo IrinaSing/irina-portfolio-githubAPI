@@ -247,40 +247,28 @@
 <g id="node13" class="node">
 <title>client/src/routes.js</title>
 <g id="a_node13"><a xlink:href="../client/src/routes.js" xlink:title="routes.js">
-<path fill="#ffffcc" stroke="black" d="M71.8,-198.3C71.8,-198.3 30.2,-198.3 30.2,-198.3 27.1,-198.3 24,-195.2 24,-192.1 24,-192.1 24,-185.9 24,-185.9 24,-182.8 27.1,-179.7 30.2,-179.7 30.2,-179.7 71.8,-179.7 71.8,-179.7 74.9,-179.7 78,-182.8 78,-185.9 78,-185.9 78,-192.1 78,-192.1 78,-195.2 74.9,-198.3 71.8,-198.3"/>
-<text text-anchor="middle" x="51" y="-186.3" font-family="Helvetica,sans-Serif" font-size="9.00">routes.js</text>
+<path fill="#ffffcc" stroke="black" d="M71.8,-259.3C71.8,-259.3 30.2,-259.3 30.2,-259.3 27.1,-259.3 24,-256.2 24,-253.1 24,-253.1 24,-246.9 24,-246.9 24,-243.8 27.1,-240.7 30.2,-240.7 30.2,-240.7 71.8,-240.7 71.8,-240.7 74.9,-240.7 78,-243.8 78,-246.9 78,-246.9 78,-253.1 78,-253.1 78,-256.2 74.9,-259.3 71.8,-259.3"/>
+<text text-anchor="middle" x="51" y="-247.3" font-family="Helvetica,sans-Serif" font-size="9.00">routes.js</text>
 </a>
 </g>
 </g>
 <!-- client/src/init/router.js&#45;&gt;client/src/routes.js -->
 <g id="edge12" class="edge">
 <title>client/src/init/router.js&#45;&gt;client/src/routes.js</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M408.46,-148.59C405.23,-121.7 394.53,-45.59 375.52,-31 309.4,19.74 267.02,-4.52 188,-31 134.14,-49.05 120.86,-63.16 86,-108 70.33,-128.16 60.61,-156.6 55.76,-173.86"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="53.73,-173.34 54.2,-179.68 57.79,-174.44 53.73,-173.34"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M408.46,-148.59C405.23,-121.7 394.53,-45.59 375.52,-31 309.4,19.74 267.02,-4.52 188,-31 134.14,-49.05 117.11,-60.48 86,-108 59.65,-148.25 53.68,-206.87 52.36,-234.49"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="50.26,-234.44 52.12,-240.52 54.46,-234.6 50.26,-234.44"/>
 </g>
 <!-- client/src/routes.js&#45;&gt;client/src/components/layout/page.js -->
 <g id="edge14" class="edge">
 <title>client/src/routes.js&#45;&gt;client/src/components/layout/page.js</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M53.68,-198.46C57.3,-216.99 67.05,-258.89 86,-289 94.64,-302.74 107.88,-315.48 118.56,-324.52"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="117.3,-326.2 123.26,-328.41 119.97,-322.97 117.3,-326.2"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M59.9,-259.48C66.67,-267.49 76.75,-279.2 86,-289 97.57,-301.27 111.29,-314.63 121.42,-324.3"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="120.01,-325.85 125.81,-328.46 122.91,-322.81 120.01,-325.85"/>
 </g>
 <!-- client/src/routes.js&#45;&gt;client/src/components/pages/home/index.js -->
 <g id="edge15" class="edge">
 <title>client/src/routes.js&#45;&gt;client/src/components/pages/home/index.js</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M58.34,-198.4C64.56,-207.03 74.71,-219.7 86,-228 91.5,-232.04 97.86,-235.55 104.16,-238.51"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="103.57,-240.54 109.9,-241.07 105.27,-236.71 103.57,-240.54"/>
-</g>
-<!-- client/src/routes.js&#45;&gt;client/src/components/pages/questions/index.js -->
-<g id="edge16" class="edge">
-<title>client/src/routes.js&#45;&gt;client/src/components/pages/questions/index.js</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M78.12,-189C86.18,-189 95.15,-189 103.58,-189"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="103.9,-191.1 109.9,-189 103.9,-186.9 103.9,-191.1"/>
-</g>
-<!-- client/src/routes.js&#45;&gt;client/src/components/pages/quiz/index.js -->
-<g id="edge17" class="edge">
-<title>client/src/routes.js&#45;&gt;client/src/components/pages/quiz/index.js</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M65.12,-179.47C79.3,-169.17 101.99,-152.7 117.87,-141.17"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="119.35,-142.69 122.97,-137.46 116.88,-139.29 119.35,-142.69"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M78.12,-250C86.18,-250 95.15,-250 103.58,-250"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="103.9,-252.1 109.9,-250 103.9,-247.9 103.9,-252.1"/>
 </g>
 <!-- client/src/logic/reverse.spec.js -->
 <g id="node14" class="node">

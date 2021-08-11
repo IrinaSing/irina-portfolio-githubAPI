@@ -1,20 +1,84 @@
+/* eslint-disable spellcheck/spell-checker */
+
 /**
  * The shared navbar.
  *
- * @param {object} routes - A routes object, see /src/routes.js.
  * @returns {HTMLDivElement} A rendered nav bar element.
  */
-export const navbar = (routes) => {
-  const container = document.createElement("nav");
-  container.className = "navbar";
 
-  for (const route of routes) {
+export const navbar = (sectionLinks) => {
+  // const sectionLinks = state.sections; // array of objects
+  const container = document.createElement("nav");
+  container.classList =
+    "navbar navbar-expand-lg navbar-light bg-light fixed-top";
+
+  // to regulate layout of elements
+  const divFluid = document.createElement("div");
+  divFluid.className = "container-fluid";
+  container.appendChild(divFluid);
+
+  // write "logo"
+  const persona = document.createElement("a");
+  persona.className = "navbar-brand";
+  persona.href = "#";
+  persona.innerHTML = "Irina Singh";
+  persona.height = 120;
+  divFluid.appendChild(persona);
+  /*
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>;
+*/
+  // buttom for burger-menu
+  const button = document.createElement("button");
+  button.className = "navbar-toggler";
+  button.type = "button";
+  button.setAttribute("data-bs-toggle", "collapse");
+  button.setAttribute("data-bs-target", "#navbarNav");
+  button.setAttribute("aria-controls", "navbarNav");
+  button.setAttribute("aria-expanded", "false");
+  button.setAttribute("aria-label", "Toggle navigation");
+  const icon = document.createElement("span");
+  icon.className = "navbar-toggler-icon";
+  button.appendChild(icon);
+  divFluid.appendChild(button);
+  /*
+  <div
+    class="collapse navbar-collapse justify-content-end"
+    id="navbarNav"
+  ></div>;
+*/
+  // collapse normal menu
+  const collapseDiv = document.createElement("div");
+  collapseDiv.classList = "collapse navbar-collapse justify-content-end";
+  collapseDiv.id = "navbarNav";
+
+  const ulOfLinks = document.createElement("ul");
+  ulOfLinks.className = "navbar-nav";
+
+  for (const link of sectionLinks) {
+    const li = document.createElement("li");
+    li.className = "nav-item";
+
     const anchor = document.createElement("a");
-    anchor.innerHTML = route.name;
-    anchor.href = route.path;
-    anchor.setAttribute("data-navigo", "");
-    container.appendChild(anchor);
+    anchor.innerHTML = link.header;
+    anchor.href = link.link;
+    anchor.className = "nav-link";
+    li.appendChild(anchor);
+    ulOfLinks.appendChild(li);
   }
+
+  collapseDiv.appendChild(ulOfLinks);
+
+  divFluid.appendChild(collapseDiv);
 
   return container;
 };

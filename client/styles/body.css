@@ -1,8 +1,26 @@
-.body {
-  height: 50vh;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+html,
+body {
+  font-size: 1rem;
+  height: 100%;
+}
+
+h1 {
+  color: #ececec;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.photo {
+  height: 400px;
+}
+
+p {
+  font-family: "Fira Sans", sans-serif;
 }

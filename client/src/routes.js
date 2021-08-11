@@ -1,8 +1,6 @@
 import { page } from "./components/layout/page.js";
 
 import { home } from "./components/pages/home/index.js";
-import { quiz } from "./components/pages/quiz/index.js";
-import { questions } from "./components/pages/questions/index.js";
 
 /**
  * Defines the route URLs, names and callbacks.
@@ -50,15 +48,5 @@ const routeHandler =
     name: "home",
     path: `/`,
     callback: routeHandler(home),
-  },
-  {
-    name: "quiz",
-    path: `/quiz`,
-    callback: routeHandler(quiz),
-  },
-  {
-    name: "questions",
-    path: `/questions`,
-    callback: routeHandler(questions),
   },
 ].forEach((route) => routes.push(route));
