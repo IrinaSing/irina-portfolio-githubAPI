@@ -1,5 +1,4 @@
 import { page } from "./components/layout/page.js";
-
 import { home } from "./components/pages/home/index.js";
 
 /**

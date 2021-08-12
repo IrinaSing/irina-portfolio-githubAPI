@@ -31,4 +31,10 @@ export const data = {
       ],
     },
   ],
+  fetchedUserData: {
+    avatar_url: "",
+    userName: "",
+    location: "",
+    email: "",
+  },
 };

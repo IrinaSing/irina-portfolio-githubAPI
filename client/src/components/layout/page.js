@@ -16,6 +16,7 @@ export const page = (bodyComponent) => {
   const container = document.createElement("div");
 
   container.appendChild(navbar(state.sections));
+
   if (typeof bodyComponent === "function") {
     container.appendChild(bodyComponent());
   } else if (bodyComponent instanceof Element) {
