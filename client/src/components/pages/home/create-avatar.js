@@ -11,11 +11,6 @@ export const createAvatar = (profileData) => {
     image.className = "shadow-sm photo";
     image.height = 300;
     div.appendChild(image);
-
-    const name = document.createElement("p");
-    const nameTextNode = document.createTextNode(profileData.name);
-    name.appendChild(nameTextNode);
-    div.appendChild(name);
   }
 
   return div;
