@@ -9,11 +9,6 @@ export const schema = {
       description: "a friendly greeting for the user",
     },
 
-    aboutP: {
-      type: "string",
-      description: "text for <p> in section about",
-    },
-
     skills: {
       type: "array",
       description: "info for section Skills",

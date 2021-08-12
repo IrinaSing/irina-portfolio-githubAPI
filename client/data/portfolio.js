@@ -6,8 +6,6 @@ export const data = {
     { header: "Projects", link: "#Projects" },
     { header: "Contacts", link: "#Contacts" },
   ],
-  aboutP:
-    "My name is Irina , I’m a junior web developer located in Belgium. I am passionate about creating maximally user-friendly websites and applications. My goal is to make products that help companies and users in reaching their goals.",
   skills: [
     {
       header: "Basics",
