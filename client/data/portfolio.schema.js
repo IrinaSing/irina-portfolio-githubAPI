@@ -43,5 +43,28 @@ export const schema = {
         },
       },
     },
+
+    fetchedUserData: {
+      type: "object",
+      description: "info about user fetched from api",
+      properties: {
+        avatar_url: {
+          type: "string",
+          description: "link to user photo",
+        },
+        userName: {
+          type: "string",
+          description: "user name on github",
+        },
+        location: {
+          type: "string",
+          description: "user location",
+        },
+        email: {
+          type: "string",
+          description: "user email",
+        },
+      },
+    },
   },
 };

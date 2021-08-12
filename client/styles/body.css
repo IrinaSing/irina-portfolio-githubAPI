@@ -4,6 +4,11 @@ body {
   height: 100%;
 }
 
+.body-div {
+  padding-top: 70px;
+  height: 100%;
+}
+
 h1 {
   color: #ececec;
   font-family: "Ubuntu", sans-serif;
