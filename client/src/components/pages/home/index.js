@@ -1,6 +1,6 @@
 import { getApiData } from "../../../api-calls/get-data.js";
-import { updateData } from "../../../handlers/upd-data.js";
 import { createAvatar } from "./create-avatar.js";
+import { aboutParagraph } from "./about-paragraph.js";
 import { append } from "../../../handlers/append.js";
 
 /**
@@ -12,42 +12,25 @@ import { append } from "../../../handlers/append.js";
 export const home = () => {
   const container = document.createElement("div");
   container.className = "body-div";
-  container.style.backgroundColor = "red";
+
+  const aboutContainer = document.createElement("div");
+  aboutContainer.className = "container";
 
   const aboutDiv = document.createElement("div");
-  aboutDiv.className = "about-div";
+  aboutDiv.classList = "row p-5";
+  aboutDiv.id = "about-div";
 
-  const p = document.createElement("p");
-  p.innerHTML = "hgcccccccccchcccccccccccccccccccc";
-  aboutDiv.appendChild(p);
+  const aboutText = aboutParagraph();
 
-  const eee = async () => {
-    const ttt = await getApiData("https://api.github.com/users/IrinaSing");
-    const avatar = createAvatar(ttt);
-    aboutDiv.appendChild(avatar);
+  const apiElements = async () => {
+    const response = await getApiData("https://api.github.com/users/IrinaSing");
+    const avatar = createAvatar(response);
+    append(aboutDiv, avatar);
+    append(aboutDiv, aboutText);
   };
-  eee();
+  apiElements();
 
-  /*
-  getApiData("https://api.github.com/users/IrinaSing")
-    .then((data) => {
-      console.log(data, "data in upd data!"); // logs json obj
-      updateData(data);
-    })
-    .then((data) => {
-      console.log(data, "data in init!"); // undefined
-    });
-*/
-  /*
-  getApiData("https://api.github.com/users/IrinaSing")
-    .then((data) => {
-      console.log(data, "data in upd data!"); // logs json obj
-      updateData(data);
-    })
-    .then((data) => {
-      console.log(data, "data in init!"); // undefined
-    });
-*/
-  container.appendChild(aboutDiv);
+  append(aboutContainer, aboutDiv);
+  append(container, aboutContainer);
   return container;
 };
