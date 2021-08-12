@@ -2,6 +2,7 @@ import { getApiData } from "../../../api-calls/get-data.js";
 import { createAvatar } from "./create-avatar.js";
 import { aboutParagraph } from "./about-paragraph.js";
 import { append } from "../../../handlers/append.js";
+import { getEmail } from "./get-email.js";
 
 /**
  * The home page.
@@ -20,13 +21,18 @@ export const home = () => {
   aboutDiv.classList = "row p-5";
   aboutDiv.id = "about-div";
 
-  const aboutText = aboutParagraph();
-
   const apiElements = async () => {
     const response = await getApiData("https://api.github.com/users/IrinaSing");
+
     const avatar = createAvatar(response);
+    const aboutText = aboutParagraph(response);
+    const email = getEmail(response);
+
+    await Promise.all([avatar, aboutText, email]);
+
     append(aboutDiv, avatar);
     append(aboutDiv, aboutText);
+    append(aboutDiv, email);
   };
   apiElements();
 

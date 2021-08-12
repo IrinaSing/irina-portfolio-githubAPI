@@ -1,5 +1,3 @@
-/* eslint-disable spellcheck/spell-checker */
-
 export const createAvatar = (profileData) => {
   const div = document.createElement("div");
   div.className = "col-sm";
