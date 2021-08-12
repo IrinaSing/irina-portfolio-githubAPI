@@ -14,6 +14,10 @@ export const home = () => {
   const container = document.createElement("div");
   container.className = "body-div";
 
+  // section about
+  const aboutSection = document.createElement("section");
+  aboutSection.id = "about";
+
   const aboutContainer = document.createElement("div");
   aboutContainer.className = "container";
 
@@ -37,6 +41,8 @@ export const home = () => {
   apiElements();
 
   append(aboutContainer, aboutDiv);
-  append(container, aboutContainer);
+  append(aboutSection, aboutContainer);
+  append(container, aboutSection);
+
   return container;
 };
