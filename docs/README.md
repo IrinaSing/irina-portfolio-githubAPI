@@ -25,6 +25,8 @@
     - home
       - [about-paragraph.js](#clientsrccomponentspageshomeabout-paragraphjs)
       - [create-avatar.js](#clientsrccomponentspageshomecreate-avatarjs)
+      - [create-header.js](#clientsrccomponentspageshomecreate-headerjs)
+      - [create-profile-card.js](#clientsrccomponentspageshomecreate-profile-cardjs)
       - [get-email.js](#clientsrccomponentspageshomeget-emailjs)
       - [get-location.js](#clientsrccomponentspageshomeget-locationjs)
       - [index.js](#clientsrccomponentspageshomeindexjs)
@@ -113,6 +115,14 @@ The page layout component.
 </details>
 
 <details><summary><a href="../../client/src/components/pages/home/create-avatar.js" id="clientsrccomponentspageshomecreate-avatarjs">../client/src/components/pages/home/create-avatar.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/home/create-header.js" id="clientsrccomponentspageshomecreate-headerjs">../client/src/components/pages/home/create-header.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/home/create-profile-card.js" id="clientsrccomponentspageshomecreate-profile-cardjs">../client/src/components/pages/home/create-profile-card.js</a></summary>
 
 </details>
 
