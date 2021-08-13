@@ -33,6 +33,20 @@ export const profileCard = (profileData) => {
   cardP.innerHTML = "Statistics, activities, useful repositories.";
   textDiv.appendChild(cardP);
 
+  const stats = document.createElement("ul");
+  stats.classList = "list-group mb-md-3";
+
+  const userName = document.createElement("li");
+  userName.className = "list-group-item";
+  userName.innerHTML = `Username: ${profileData.login}`;
+  stats.appendChild(userName);
+
+  const repos = document.createElement("li");
+  repos.className = "list-group-item";
+  repos.innerHTML = `Public repositories: ${profileData.public_repos}`;
+  stats.appendChild(repos);
+  textDiv.appendChild(stats);
+
   const cardA = document.createElement("a");
   cardA.className = "btn btn-primary";
   cardA.innerHTML = "Go to profile";
