@@ -16,7 +16,7 @@ export const home = () => {
   const container = document.createElement("div");
   container.className = "body-div";
 
-  // section about
+  // section about elements
   const aboutSection = document.createElement("section");
   aboutSection.id = "about";
 
@@ -27,27 +27,7 @@ export const home = () => {
   aboutDiv.classList = "row p-5";
   aboutDiv.id = "about-div";
 
-  const apiAbout = async () => {
-    const response = await getApiData("https://api.github.com/users/IrinaSing");
-
-    const avatar = createAvatar(response);
-    const aboutText = aboutParagraph(response);
-    const email = getEmail(response);
-    const gitCard = profileCard(response);
-
-    await Promise.all([avatar, aboutText, email, gitCard]);
-
-    append(aboutDiv, avatar);
-    append(aboutDiv, aboutText);
-    append(aboutDiv, email);
-  };
-  apiAbout();
-
-  append(aboutContainer, aboutDiv);
-  append(aboutSection, aboutContainer);
-  append(container, aboutSection);
-
-  // section Projects
+  // section Projects elements
   const projectsSection = document.createElement("section");
   projectsSection.id = "projects";
 
@@ -60,17 +40,30 @@ export const home = () => {
   const gitProfileCard = document.createElement("div");
   gitProfileCard.className = "container-sm align-items-center";
 
-  const apiProjects = async () => {
+  // get info about user from api
+  const apiUser = async () => {
     const response = await getApiData("https://api.github.com/users/IrinaSing");
 
+    const avatar = createAvatar(response);
+    const aboutText = aboutParagraph(response);
+    const email = getEmail(response);
     const gitCard = profileCard(response);
 
-    await Promise.all([gitCard]);
+    await Promise.all([avatar, aboutText, email, gitCard]);
 
+    append(aboutDiv, avatar);
+    append(aboutDiv, aboutText);
+    append(aboutDiv, email);
     append(gitProfileCard, gitCard);
   };
-  apiProjects();
+  apiUser();
 
+  // append about
+  append(aboutContainer, aboutDiv);
+  append(aboutSection, aboutContainer);
+  append(container, aboutSection);
+
+  // append projects
   append(projectsContainer, projectsHeader);
   append(projectsContainer, gitProfileCard);
   append(projectsSection, projectsContainer);
