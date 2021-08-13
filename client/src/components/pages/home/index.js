@@ -62,7 +62,6 @@ export const home = () => {
 
   const apiProjects = async () => {
     const response = await getApiData("https://api.github.com/users/IrinaSing");
-
     const gitCard = profileCard(response);
 
     await Promise.all([gitCard]);
