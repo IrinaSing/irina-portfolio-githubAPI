@@ -29,3 +29,15 @@ h2 {
 p {
   font-family: "Fira Sans", sans-serif;
 }
+
+#octocat {
+  width: 100px;
+}
+
+#github {
+  width: 100px;
+}
+
+a {
+  color: black;
+}

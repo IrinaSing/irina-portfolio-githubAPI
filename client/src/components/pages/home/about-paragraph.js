@@ -1,4 +1,4 @@
-import { state } from "../../../init/state.js";
+import { createHeader } from "./create-header.js";
 
 export const aboutParagraph = (profileData) => {
   const getLocation = profileData.location;
@@ -6,9 +6,7 @@ export const aboutParagraph = (profileData) => {
   const div = document.createElement("div");
   div.classList = "col-sm pt-5";
 
-  const heading = document.createElement("h2");
-  const headingTextNode = document.createTextNode(state.sections[0].header);
-  heading.appendChild(headingTextNode);
+  const header = createHeader(0);
 
   // eslint-disable-next-line spellcheck/spell-checker
   const aboutP = `My name is Irina. I’m a junior web developer located in ${getLocation}. I am passionate about creating maximally user-friendly websites and applications. My goal is to make products that help companies and users in reaching their goals.`;
@@ -17,7 +15,7 @@ export const aboutParagraph = (profileData) => {
   const paragraphTextNode = document.createTextNode(aboutP);
   paragraph.appendChild(paragraphTextNode);
 
-  div.appendChild(heading);
+  div.appendChild(header);
   div.appendChild(paragraph);
 
   return div;
