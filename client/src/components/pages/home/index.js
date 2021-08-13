@@ -58,10 +58,11 @@ export const home = () => {
   projectsContainer.appendChild(projectsHeader);
 
   const gitProfileCard = document.createElement("div");
-  gitProfileCard.className = "container-sm";
+  gitProfileCard.className = "container-sm align-items-center";
 
   const apiProjects = async () => {
     const response = await getApiData("https://api.github.com/users/IrinaSing");
+
     const gitCard = profileCard(response);
 
     await Promise.all([gitCard]);

@@ -31,13 +31,17 @@ p {
 }
 
 #octocat {
-  width: 100px;
+  width: 60px;
 }
 
 #github {
-  width: 100px;
+  width: 60px;
 }
 
 a {
   color: black;
+}
+
+.pale {
+  color: lightslategray;
 }
