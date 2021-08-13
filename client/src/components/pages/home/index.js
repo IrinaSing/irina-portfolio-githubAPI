@@ -57,11 +57,8 @@ export const home = () => {
   const projectsHeader = createHeader(2);
   projectsContainer.appendChild(projectsHeader);
 
-  const cardsContainer = document.createElement("div");
-  cardsContainer.className = "container-sm";
-
-  const cardsDiv = document.createElement("div");
-  cardsDiv.classList = "row text-center justify-content-md-center";
+  const gitProfileCard = document.createElement("div");
+  gitProfileCard.className = "container-sm";
 
   const apiProjects = async () => {
     const response = await getApiData("https://api.github.com/users/IrinaSing");
@@ -70,13 +67,12 @@ export const home = () => {
 
     await Promise.all([gitCard]);
 
-    append(cardsDiv, gitCard);
+    append(gitProfileCard, gitCard);
   };
   apiProjects();
 
-  append(cardsContainer, cardsDiv);
   append(projectsContainer, projectsHeader);
-  append(projectsContainer, cardsContainer);
+  append(projectsContainer, gitProfileCard);
   append(projectsSection, projectsContainer);
   append(container, projectsSection);
 
