@@ -34,7 +34,7 @@ export const schema = {
         },
         link: {
           type: "string",
-          description: "link to the section",
+          description: "id of section that is also used to create hyperlink",
         },
       },
     },

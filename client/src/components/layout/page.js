@@ -1,5 +1,5 @@
 import { navbar } from "./navbar.js";
-import { footer } from "./footer.js";
+// import { footer } from "./footer.js";
 import { state } from "../../init/state.js";
 
 /**

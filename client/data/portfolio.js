@@ -1,10 +1,10 @@
 export const data = {
   greeting: "Hello, welcome to my page",
   sections: [
-    { header: "About", link: "#About" },
-    { header: "Skills", link: "#Skills" },
-    { header: "Projects", link: "#Projects" },
-    { header: "Contacts", link: "#Contacts" },
+    { header: "About", link: "about" },
+    { header: "Skills", link: "skills" },
+    { header: "Projects", link: "projects" },
+    { header: "Contacts", link: "contacts" },
   ],
   skills: [
     {
