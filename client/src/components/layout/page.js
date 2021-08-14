@@ -24,7 +24,7 @@ export const page = (bodyComponent) => {
   } else {
     throw new TypeError("body is not a function or a DOM element");
   }
-  container.appendChild(footer());
+  // container.appendChild(footer());
 
   return container;
 };
