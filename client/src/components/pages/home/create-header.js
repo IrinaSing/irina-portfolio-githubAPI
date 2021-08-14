@@ -5,6 +5,7 @@ export const createHeader = (section) => {
   const headingTextNode = document.createTextNode(
     state.sections[section].header
   );
+  heading.id = state.sections[section].link;
   heading.appendChild(headingTextNode);
   return heading;
 };

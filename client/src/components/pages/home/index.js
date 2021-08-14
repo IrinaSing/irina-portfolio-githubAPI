@@ -5,6 +5,7 @@ import { append } from "../../../handlers/append.js";
 import { getEmail } from "./get-email.js";
 import { createHeader } from "./create-header.js";
 import { profileCard } from "./create-profile-card.js";
+import { projectCard } from "./create-project-card.js";
 
 /**
  * The home page.
@@ -16,7 +17,7 @@ export const home = () => {
   const container = document.createElement("div");
   container.className = "body-div";
 
-  // section about
+  // section about elements
   const aboutSection = document.createElement("section");
   aboutSection.id = "about";
 
@@ -27,7 +28,21 @@ export const home = () => {
   aboutDiv.classList = "row p-5";
   aboutDiv.id = "about-div";
 
-  const apiAbout = async () => {
+  // section Projects elements
+  const projectsSection = document.createElement("section");
+  projectsSection.id = "projects";
+
+  const projectsContainer = document.createElement("div");
+  projectsContainer.classList = "container text-center p-5";
+
+  const projectsHeader = createHeader(2);
+  projectsContainer.appendChild(projectsHeader);
+
+  const gitProfileCard = document.createElement("div");
+  gitProfileCard.className = "container-sm p-3 align-items-center";
+
+  // get info about user from api
+  const apiUser = async () => {
     const response = await getApiData("https://api.github.com/users/IrinaSing");
 
     const avatar = createAvatar(response);
@@ -40,39 +55,36 @@ export const home = () => {
     append(aboutDiv, avatar);
     append(aboutDiv, aboutText);
     append(aboutDiv, email);
+    append(gitProfileCard, gitCard);
   };
-  apiAbout();
+  apiUser();
 
+  // append about
   append(aboutContainer, aboutDiv);
   append(aboutSection, aboutContainer);
   append(container, aboutSection);
 
-  // section Projects
-  const projectsSection = document.createElement("section");
-  projectsSection.id = "projects";
-
-  const projectsContainer = document.createElement("div");
-  projectsContainer.classList = "container p-5 text-center";
-
-  const projectsHeader = createHeader(2);
-  projectsContainer.appendChild(projectsHeader);
-
-  const gitProfileCard = document.createElement("div");
-  gitProfileCard.className = "container-sm align-items-center";
-
-  const apiProjects = async () => {
-    const response = await getApiData("https://api.github.com/users/IrinaSing");
-
-    const gitCard = profileCard(response);
-
-    await Promise.all([gitCard]);
-
-    append(gitProfileCard, gitCard);
-  };
-  apiProjects();
-
+  // append projects
   append(projectsContainer, projectsHeader);
   append(projectsContainer, gitProfileCard);
+
+  // projects elements
+
+  // container for all projects
+  const gitProjects = document.createElement("div");
+  gitProjects.className = "container p-3";
+
+  const apiRepos = async () => {
+    const response = await getApiData(
+      "https://api.github.com/users/IrinaSing/repos?&per_page=100"
+    );
+    const projects = projectCard(response);
+    append(gitProjects, projects);
+  };
+  apiRepos();
+
+  append(projectsContainer, gitProjects);
+
   append(projectsSection, projectsContainer);
   append(container, projectsSection);
 

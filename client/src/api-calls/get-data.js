@@ -1,6 +1,4 @@
-const url = "https://api.github.com/users/IrinaSing";
-
-export const getApiData = async () => {
+export const getApiData = async (url) => {
   const data = await fetch(url);
   const response = await data.json();
 
