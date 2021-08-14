@@ -27,6 +27,7 @@
       - [create-avatar.js](#clientsrccomponentspageshomecreate-avatarjs)
       - [create-header.js](#clientsrccomponentspageshomecreate-headerjs)
       - [create-profile-card.js](#clientsrccomponentspageshomecreate-profile-cardjs)
+      - [create-project-card.js](#clientsrccomponentspageshomecreate-project-cardjs)
       - [get-email.js](#clientsrccomponentspageshomeget-emailjs)
       - [get-location.js](#clientsrccomponentspageshomeget-locationjs)
       - [index.js](#clientsrccomponentspageshomeindexjs)
@@ -123,6 +124,10 @@ The page layout component.
 </details>
 
 <details><summary><a href="../../client/src/components/pages/home/create-profile-card.js" id="clientsrccomponentspageshomecreate-profile-cardjs">../client/src/components/pages/home/create-profile-card.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/home/create-project-card.js" id="clientsrccomponentspageshomecreate-project-cardjs">../client/src/components/pages/home/create-project-card.js</a></summary>
 
 </details>
 
