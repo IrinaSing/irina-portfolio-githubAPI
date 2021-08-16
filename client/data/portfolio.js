@@ -1,10 +1,10 @@
 export const data = {
   greeting: "Hello, welcome to my page",
   sections: [
-    { header: "About", link: "about" },
-    { header: "Skills", link: "skills" },
-    { header: "Projects", link: "projects" },
-    { header: "Contacts", link: "contacts" },
+    { header: "About", id: "about" },
+    { header: "Skills", id: "skills" },
+    { header: "Projects", id: "projects" },
+    { header: "Contacts", id: "contacts" },
   ],
   skills: [
     {
@@ -29,10 +29,4 @@ export const data = {
       ],
     },
   ],
-  fetchedUserData: {
-    avatar_url: "",
-    userName: "",
-    location: "",
-    email: "",
-  },
 };

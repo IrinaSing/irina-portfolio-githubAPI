@@ -53,7 +53,7 @@ export const navbar = (sectionLinks) => {
 
     const anchor = document.createElement("a");
     anchor.innerHTML = link.header;
-    anchor.href = `#${link.link}`;
+    anchor.href = `#${link.id}`;
     anchor.className = "nav-link";
     li.appendChild(anchor);
     ulOfLinks.appendChild(li);
