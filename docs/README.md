@@ -54,6 +54,21 @@
 
 <details><summary><a href="../../client/src/api-calls/get-data.js" id="clientsrcapi-callsget-datajs">../client/src/api-calls/get-data.js</a></summary>
 
+<a name="getApiData"></a>
+
+## getApiData ⇒ <code>Promise.&lt;object&gt;</code>
+
+Fetches a specific resource from the typicode jsonplaceholder API.
+
+**Returns**: <code>Promise.&lt;object&gt;</code> - A resource object returned from the API.  
+**Throws**:
+
+- <code>Error</code> HTTP error! status: {number}.
+
+| Param | Type                | Description               |
+| ----- | ------------------- | ------------------------- |
+| url   | <code>string</code> | The api url for fetching. |
+
 </details>
 
 ---
