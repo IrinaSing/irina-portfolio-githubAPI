@@ -6,7 +6,7 @@ import { getEmail } from "./get-email.js";
 import { createHeader } from "./create-header.js";
 import { profileCard } from "./create-profile-card.js";
 import { projectCard } from "./create-project-card.js";
-import { errorParagraph } from "./errorMessage.js";
+import { errorParagraph } from "./error-message.js";
 
 /**
  * The home page.
