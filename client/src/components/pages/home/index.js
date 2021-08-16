@@ -6,7 +6,7 @@ import { getEmail } from "./get-email.js";
 import { createHeader } from "./create-header.js";
 import { profileCard } from "./create-profile-card.js";
 import { projectCard } from "./create-project-card.js";
-import { errorParagraph } from "./error-message.js";
+// import { errorParagraph } from "./error-message.js";
 
 /**
  * The home page.
@@ -61,9 +61,10 @@ export const home = () => {
       append(aboutDiv, email);
       append(gitProfileCard, gitCard);
     } catch (err) {
-      const message = `Oops, information is not available now :(`;
-      const errorMessage = errorParagraph(message, err);
-      append(gitProfileCard, errorMessage);
+      // const message = `Oops, information is not available now :(`;
+      //const errorMessage = errorParagraph(message, err);
+      //append(gitProfileCard, errorMessage);
+      console.log(err);
     }
   };
   apiUser();
@@ -91,9 +92,10 @@ export const home = () => {
       const projects = projectCard(response);
       append(gitProjects, projects);
     } catch (err) {
-      const message = `Oops, projects are not available now :(`;
-      const errorMessage = errorParagraph(message, err);
-      append(gitProjects, errorMessage);
+      // const message = `Oops, projects are not available now :(`;
+      // const errorMessage = errorParagraph(message, err);
+      // append(gitProjects, errorMessage);
+      console.log(err);
     }
   };
   apiRepos();
