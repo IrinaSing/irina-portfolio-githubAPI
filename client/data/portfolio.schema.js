@@ -32,32 +32,9 @@ export const schema = {
           type: "string",
           description: "text to render in the header of section",
         },
-        link: {
+        id: {
           type: "string",
           description: "id of section that is also used to create hyperlink",
-        },
-      },
-    },
-
-    fetchedUserData: {
-      type: "object",
-      description: "info about user fetched from api",
-      properties: {
-        avatar_url: {
-          type: "string",
-          description: "link to user photo",
-        },
-        userName: {
-          type: "string",
-          description: "user name on github",
-        },
-        location: {
-          type: "string",
-          description: "user location",
-        },
-        email: {
-          type: "string",
-          description: "user email",
         },
       },
     },
