@@ -11,7 +11,7 @@
 export const getApiData = async (url) => {
   const data = await fetch(url);
   if (!data.ok) {
-    throw new Error(`HTTP error! status: ${data.status}\n-> ${URL}`);
+    throw new Error(`HTTP error! status: ${data.status}`);
   }
   const response = await data.json();
 

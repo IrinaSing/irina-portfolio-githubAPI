@@ -6,6 +6,7 @@ import { getEmail } from "./get-email.js";
 import { createHeader } from "./create-header.js";
 import { profileCard } from "./create-profile-card.js";
 import { projectCard } from "./create-project-card.js";
+import { errorParagraph } from "./errorMessage.js";
 
 /**
  * The home page.
@@ -43,19 +44,27 @@ export const home = () => {
 
   // get info about user from api
   const apiUser = async () => {
-    const response = await getApiData("https://api.github.com/users/IrinaSing");
+    try {
+      const response = await getApiData(
+        "https://api.github.com/users/IrinaSing"
+      );
 
-    const avatar = createAvatar(response);
-    const aboutText = aboutParagraph(response);
-    const email = getEmail(response);
-    const gitCard = profileCard(response);
+      const avatar = createAvatar(response);
+      const aboutText = aboutParagraph(response);
+      const email = getEmail(response);
+      const gitCard = profileCard(response);
 
-    await Promise.all([avatar, aboutText, email, gitCard]);
+      await Promise.allSettled([avatar, aboutText, email, gitCard]);
 
-    append(aboutDiv, avatar);
-    append(aboutDiv, aboutText);
-    append(aboutDiv, email);
-    append(gitProfileCard, gitCard);
+      append(aboutDiv, avatar);
+      append(aboutDiv, aboutText);
+      append(aboutDiv, email);
+      append(gitProfileCard, gitCard);
+    } catch (err) {
+      const message = `Oops, information is not available now :(`;
+      const errorMessage = errorParagraph(message, err);
+      append(gitProfileCard, errorMessage);
+    }
   };
   apiUser();
 
@@ -75,11 +84,17 @@ export const home = () => {
   gitProjects.className = "container p-3";
 
   const apiRepos = async () => {
-    const response = await getApiData(
-      "https://api.github.com/users/IrinaSing/repos?&per_page=100"
-    );
-    const projects = projectCard(response);
-    append(gitProjects, projects);
+    try {
+      const response = await getApiData(
+        "https://api.github.com/users/IrinaSing/repos?&per_page=100"
+      );
+      const projects = projectCard(response);
+      append(gitProjects, projects);
+    } catch (err) {
+      const message = `Oops, projects are not available now :(`;
+      const errorMessage = errorParagraph(message, err);
+      append(gitProjects, errorMessage);
+    }
   };
   apiRepos();
 
